@@ -1,0 +1,37 @@
+BEGIN TRANSACTION;
+
+INSERT INTO "spatialShape" VALUES('4b5dfb22-43c0-11e8-be0a-1c4d70487308','GYB-O','Ocean Basin grid-Meridional Section','gridlatitude|olevel|basin','dim:grid_latitude dim:olevel dim:basin',0,'false');
+INSERT INTO "spatialShape" VALUES('4b5dfb23-43c0-11e8-be0a-1c4d70487308','GYB-R','Ocean Basin grid-Meridional Section (on density surfaces)','gridlatitude|rho|basin','dim:grid_latitude dim:rho dim:basin',0,'false');
+INSERT INTO "spatialShape" VALUES('a65607a4-8883-11e5-b571-ac72891c3257','na-AH','Atmospheric profile (model half-levels)','alevhalf','dim:alevhalf',0,'false');
+INSERT INTO "spatialShape" VALUES('a6560fba-8883-11e5-b571-ac72891c3257','na-na','Global mean/constant',NULL,NULL,1,'true');
+INSERT INTO "spatialShape" VALUES('a6562298-8883-11e5-b571-ac72891c3257','S-A','Atmospheric profiles at specified sites','alevel|site','dim:alevel dim:site',0,'false');
+INSERT INTO "spatialShape" VALUES('a6563594-8883-11e5-b571-ac72891c3257','S-AH','Atmospheric profiles (half levels) at specified sites','alevhalf|site','dim:alevhalf dim:site',0,'false');
+INSERT INTO "spatialShape" VALUES('a6561c44-8883-11e5-b571-ac72891c3257','S-na','Site (specific locations requested by CFMIP)','site','dim:site',1,'true');
+INSERT INTO "spatialShape" VALUES('a6560c86-8883-11e5-b571-ac72891c3257','TR-na','Ocean Transect','oline','dim:oline',1,'true');
+INSERT INTO "spatialShape" VALUES('7f30b964-7fca-11e6-a12d-2358a6a87f04','TRS-na','Sea-ice ocean transect','siline','dim:siline',1,'true');
+INSERT INTO "spatialShape" VALUES('a6563724-8883-11e5-b571-ac72891c3257','XY-A','Global field on model atmosphere levels','longitude|latitude|alevel','dim:longitude dim:latitude dim:alevel',0,'false');
+INSERT INTO "spatialShape" VALUES('a6563274-8883-11e5-b571-ac72891c3257','XY-AH','Global field on model atmosphere half-levels','longitude|latitude|alevhalf','dim:longitude dim:latitude dim:alevhalf',0,'false');
+INSERT INTO "spatialShape" VALUES('a6562770-8883-11e5-b571-ac72891c3257','XY-H16','Global field (16 altitudes)','longitude|latitude|alt16','dim:longitude dim:latitude dim:alt16',16,'true');
+INSERT INTO "spatialShape" VALUES('a6561ab4-8883-11e5-b571-ac72891c3257','XY-H40','Global field on 40 altitude levels','longitude|latitude|alt40','dim:longitude dim:latitude dim:alt40',40,'true');
+INSERT INTO "spatialShape" VALUES('a656047a-8883-11e5-b571-ac72891c3257','XY-na','Global field (single level)','longitude|latitude','dim:longitude dim:latitude',1,'true');
+INSERT INTO "spatialShape" VALUES('a6562c2a-8883-11e5-b571-ac72891c3257','XY-O','Global ocean field on model levels','longitude|latitude|olevel','dim:longitude dim:latitude dim:olevel',0,'false');
+INSERT INTO "spatialShape" VALUES('d180ea34-aab3-11e8-948d-1c4d70487308','XY-OH','Global ocean field on model half levels','longitude|latitude|olevhalf','dim:longitude dim:latitude dim:olevel',0,'false');
+INSERT INTO "spatialShape" VALUES('a6562a9a-8883-11e5-b571-ac72891c3257','XY-P19','Global field (19 pressure levels)','longitude|latitude|plev19','dim:longitude dim:latitude dim:plev19',19,'true');
+INSERT INTO "spatialShape" VALUES('a656114a-8883-11e5-b571-ac72891c3257','XY-P27','Global field (27 pressure levels)','longitude|latitude|plev27','dim:longitude dim:latitude dim:plev27',27,'true');
+INSERT INTO "spatialShape" VALUES('a65615fa-8883-11e5-b571-ac72891c3257','XY-P3','Global field (3 pressure levels)','longitude|latitude|plev3','dim:longitude dim:latitude dim:plev3',3,'true');
+INSERT INTO "spatialShape" VALUES('a65612da-8883-11e5-b571-ac72891c3257','XY-P4','Global field (4 pressure levels)','longitude|latitude|plev4','dim:longitude dim:latitude dim:plev4',4,'true');
+INSERT INTO "spatialShape" VALUES('a6562f4a-8883-11e5-b571-ac72891c3257','XY-P7','Global field (7 pressure levels)','longitude|latitude|plev7c','dim:longitude dim:latitude dim:plev7c',7,'true');
+INSERT INTO "spatialShape" VALUES('9f82d666-609e-11e6-b1b8-ac72891c3257','XY-P7T','Global field (7 pressure tropospheric levels)','longitude|latitude|plev7h','dim:longitude dim:latitude dim:plev7h',7,'true');
+INSERT INTO "spatialShape" VALUES('a6563a44-8883-11e5-b571-ac72891c3257','XY-P8','Global field (8 pressure levels)','longitude|latitude|plev8','dim:longitude dim:latitude dim:plev8',8,'true');
+INSERT INTO "spatialShape" VALUES('a6563bca-8883-11e5-b571-ac72891c3257','XY-S','Global field on soil levels','longitude|latitude|sdepth','dim:longitude dim:latitude dim:sdepth',0,'false');
+INSERT INTO "spatialShape" VALUES('fa1c83ea-596b-11e6-a4be-ac72891c3257','XYA-na','Antarctic Polar Stereographic Grid','xant|yant','dim:xant dim:yant',1,'true');
+INSERT INTO "spatialShape" VALUES('f9cbf75e-596b-11e6-a4be-ac72891c3257','XYG-na','Greenland Polar Stereographic Grid','xgre|ygre','dim:xgre dim:ygre',1,'true');
+INSERT INTO "spatialShape" VALUES('a65620f4-8883-11e5-b571-ac72891c3257','Y-A','Zonal mean (on model levels)','latitude|alevel','dim:latitude dim:alevel',0,'false');
+INSERT INTO "spatialShape" VALUES('6dc25718-a24a-11e5-a29d-5404a60d96b5','Y-na','Zonal mean (on surface)','latitude','dim:latitude',1,'true');
+INSERT INTO "spatialShape" VALUES('a6560948-8883-11e5-b571-ac72891c3257','Y-P19','Atmospheric Zonal Mean (on 19 pressure levels)','latitude|plev19','dim:latitude dim:plev19',19,'true');
+INSERT INTO "spatialShape" VALUES('a6561924-8883-11e5-b571-ac72891c3257','Y-P39','Atmospheric Zonal Mean (on 39 pressure levels)','latitude|plev39','dim:latitude dim:plev39',36,'true');
+INSERT INTO "spatialShape" VALUES('a6560aec-8883-11e5-b571-ac72891c3257','YB-na','Ocean Basin Zonal Mean','latitude|basin','dim:latitude dim:basin',1,'true');
+INSERT INTO "spatialShape" VALUES('a655ffac-8883-11e5-b571-ac72891c3257','YB-O','Ocean Basin Meridional Section','latitude|olevel|basin','dim:latitude dim:olevel dim:basin',0,'false');
+INSERT INTO "spatialShape" VALUES('a65638b4-8883-11e5-b571-ac72891c3257','YB-R','Ocean Basin Meridional Section (on density surfaces)','latitude|rho|basin','dim:latitude dim:rho dim:basin',0,'false');
+
+COMMIT TRANSACTION;

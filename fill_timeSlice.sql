@@ -1,0 +1,37 @@
+BEGIN TRANSACTION;
+
+INSERT INTO "timeSlice" VALUES('_slice_abrupt20','abrupt20','Years 131 to 150 from start','relativeRange',131,150,NULL,NULL,20.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_abrupt30','abrupt30','Years 121 to 150 from start','relativeRange',121,150,NULL,NULL,30.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_abrupt40s','abrupt40s','First and Last 40 years','sliceList',1,150,110.0,40,80.0,NULL,NULL,'First 40 years (years 1-40) and last 40 years (years 111-150)',NULL);
+INSERT INTO "timeSlice" VALUES('_slice_abrupt5','abrupt5','First 40 years','relativeRange',1,5,NULL,NULL,5.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_branch020','branch20','Years matching last 20 of historical','siblingBranchClimatology',1995,2014,NULL,NULL,20.0,NULL,NULL,'This time slice applies to experiments which have branched from the piControl experiment, and whose simulation time overlaps with that of a historical simulation branched from the same piControl experiment. The aim is to archive a 20 year slice which coincides with the 20 years of the piControl experiment defined by piControl20.','historical');
+INSERT INTO "timeSlice" VALUES('_slice_cfOff','cfOff','Single year for high frequency data','simpleRange',2008,2008,NULL,NULL,1.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_clim20','clim20','1995-2014 monthly climatology','monthlyClimatology',1995,2014,NULL,NULL,20.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_climLast20','climLast20','Climatology of last 20 years','monthlyClimatologyFinal',NULL,NULL,NULL,NULL,20.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_DAMIP20','DAMIP20','DAMIP 20 year','simpleRange',2081,2100,NULL,NULL,20.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_DAMIP40','DAMIP40','DAMIP 20 year slices','sliceList',2041,2100,40.0,20,40.0,NULL,NULL,'Contains:_slice_DAMIP20:',NULL);
+INSERT INTO "timeSlice" VALUES('_slice_DAMIP42','DAMIP42','DAMIP 42 year','simpleRange',1979,2020,NULL,NULL,42.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_DAMIP42ext','DAMIP42ext','DAMIP 42 year (extension)','simpleRange',2015,2020,NULL,NULL,6.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_DAMIP61','DAMIP61','DAMIP 61 year','simpleRange',1960,2020,NULL,NULL,61.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_DAMIP61ext','DAMIP61ext','DAMIP 61 year (extension)','simpleRange',2015,2020,NULL,NULL,6.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_hist20','hist20','1995-2014','simpleRange',1995,2014,NULL,NULL,20.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_hist36','hist36','1979-2014','simpleRange',1979,2014,NULL,NULL,36.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_hist55','hist55','1960-2014','simpleRange',1960,2014,NULL,NULL,55.0,NULL,NULL,'Contains:_slice_RFMIP:',NULL);
+INSERT INTO "timeSlice" VALUES('_slice_hist55plus','hist55plus','1850 and 1960-2014','simpleRange',1960,2014,NULL,NULL,55.0,NULL,NULL,'Union:_slice_RFMIP1:',NULL);
+INSERT INTO "timeSlice" VALUES('_slice_hist65','hist65','1950-2014','simpleRange',1950,2014,NULL,NULL,65.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_histext','histext','Extended historical period','simpleRange',2015,2019,NULL,NULL,5.0,NULL,NULL,'Contains:_slice_RFMIP:',NULL);
+INSERT INTO "timeSlice" VALUES('_slice_piControl020','piControl020','Years matching last 20 of historical','branchedYears',1995,2014,NULL,NULL,20.0,NULL,NULL,NULL,'historical');
+INSERT INTO "timeSlice" VALUES('_slice_piControl030','piControl030','Years matching last 30 of historical','branchedYears',1985,2014,NULL,NULL,30.0,NULL,NULL,NULL,'historical');
+INSERT INTO "timeSlice" VALUES('_slice_piControl040','piControl040','Years matching last 40 of historical','branchedYears',1975,2014,NULL,NULL,40.0,NULL,NULL,NULL,'historical');
+INSERT INTO "timeSlice" VALUES('_slice_piControl050','piControl050','Years matching last 50 of historical','branchedYears',1965,2014,NULL,NULL,50.0,NULL,NULL,NULL,'historical');
+INSERT INTO "timeSlice" VALUES('_slice_piControl100','piControl100','Years matching last 100 of historical','branchedYears',1915,2014,NULL,NULL,100.0,NULL,NULL,NULL,'historical');
+INSERT INTO "timeSlice" VALUES('_slice_piControl140','piControl140','Years matching last 140 of historical','branchedYears',1875,2014,NULL,NULL,140.0,NULL,NULL,NULL,'historical');
+INSERT INTO "timeSlice" VALUES('_slice_piControl165','piControl165','Years matching historical','branchedYears',1850,2014,NULL,NULL,165.0,NULL,NULL,NULL,'historical');
+INSERT INTO "timeSlice" VALUES('_slice_piControl200','piControl200','Years matching historical and 35 years beyond','branchedYears',1850,2049,NULL,NULL,200.0,NULL,NULL,NULL,'historical');
+INSERT INTO "timeSlice" VALUES('_slice_RFMIP','RFMIP','Selected days in 4 years','dayList',NULL,NULL,NULL,1,NULL,'1850 1 1 1850 4 1 1850 7 1 1850 10 1 2005 1 1 2005 4 1 2005 7 1 2005 10 1','day','January 1, April 1, July 1, and October 1 from 1850, 1980, 1992 and 2005 from the historical run',NULL);
+INSERT INTO "timeSlice" VALUES('_slice_RFMIP2','RFMIP2','Selected days in 4 years','dayList',NULL,NULL,NULL,1,NULL,'1980 1 1 1980 4 1 1980 7 1 1980 10 1 1992 1 1 1992 4 1 1992 7 1 1992 10 1','day','January 1, April 1, July 1, and October 1 from 1980 and 1992 from the historical run',NULL);
+INSERT INTO "timeSlice" VALUES('_slice_RFMIPunion','RFMIPunion',NULL,'dayList',NULL,NULL,NULL,1,NULL,'1850 1 1 1850 4 1 1850 7 1 1850 10 1 1980 1 1 1980 4 1 1980 7 1 1980 10 1 1992 1 1 1992 4 1 1992 7 1 1992 10 1 2005 1 1 2005 4 1 2005 7 1 2005 10 1','day','January 1, April 1, July 1, and October 1 from 1850 and 2005 from the historical run',NULL);
+INSERT INTO "timeSlice" VALUES('_slice_scenario20','scenario20','2081-2100 Climatology','monthlyClimatology',2081,2100,NULL,NULL,20.0,NULL,NULL,NULL,NULL);
+INSERT INTO "timeSlice" VALUES('_slice_VolMIP3','VolMIP3','Initial 3 years','relativeRange',1,3,NULL,NULL,3.0,NULL,NULL,NULL,NULL);
+
+COMMIT TRANSACTION;
